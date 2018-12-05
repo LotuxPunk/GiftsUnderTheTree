@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "color=red": {
+      "model": "giftsunderthetree:present"
+    },
+    "color=pink": {
+      "model": "giftsunderthetree:present_2"
+    },
+    "color=blue": {
+      "model": "giftsunderthetree:present_3"
+    },
+    "color=green": {
+      "model": "giftsunderthetree:present_4"
+    }
+  }
+}

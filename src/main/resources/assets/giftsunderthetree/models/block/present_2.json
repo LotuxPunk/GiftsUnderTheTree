@@ -1,0 +1,7 @@
+{
+  "parent": "present",
+  "textures": {
+    "0": "giftsunderthetree:blocks/present_2",
+    "particle": "giftsunderthetree:blocks/present_2"
+  }
+}
