@@ -1,15 +1,15 @@
 {
   "variants": {
-    "color=red": {
+    "type=1": {
       "model": "giftsunderthetree:present"
     },
-    "color=pink": {
+    "type=2": {
       "model": "giftsunderthetree:present_2"
     },
-    "color=blue": {
+    "type=3": {
       "model": "giftsunderthetree:present_3"
     },
-    "color=green": {
+    "type=4": {
       "model": "giftsunderthetree:present_4"
     }
   }
