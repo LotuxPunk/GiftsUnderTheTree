@@ -1,5 +1,6 @@
 {
 	"credit": "Made with Blockbench",
+	"parent": "block/block",
 	"textures": {
 		"0": "giftsunderthetree:blocks/present_1",
 		"particle": "giftsunderthetree:blocks/present_1"

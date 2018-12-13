@@ -1,16 +1,35 @@
 {
+  "forge_marker": 1,
+  "defaults": {
+    "model": "giftsunderthetree:present",
+    "transform": "forge:default-block"
+  },
   "variants": {
-    "type=1": {
-      "model": "giftsunderthetree:present"
-    },
-    "type=2": {
-      "model": "giftsunderthetree:present_2"
-    },
-    "type=3": {
-      "model": "giftsunderthetree:present_3"
-    },
-    "type=4": {
-      "model": "giftsunderthetree:present_4"
+    "color": {
+      "red": {
+        "textures": {
+          "particle": "giftsunderthetree:blocks/present_1",
+          "0": "giftsunderthetree:blocks/present_1"
+        }
+      },
+      "pink": {
+        "textures": {
+          "particle": "giftsunderthetree:blocks/present_2",
+          "0": "giftsunderthetree:blocks/present_2"
+        }
+      },
+      "blue": {
+        "textures": {
+          "particle": "giftsunderthetree:blocks/present_3",
+          "0": "giftsunderthetree:blocks/present_3"
+        }
+      },
+      "green": {
+        "textures": {
+          "particle": "giftsunderthetree:blocks/present_4",
+          "0": "giftsunderthetree:blocks/present_4"
+        }
+      }
     }
   }
 }

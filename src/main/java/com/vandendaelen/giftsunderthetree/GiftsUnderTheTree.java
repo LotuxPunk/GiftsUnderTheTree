@@ -25,6 +25,7 @@ public class GiftsUnderTheTree {
     public void preInit(FMLPreInitializationEvent event)
     {
         logger = event.getModLog();
+        //Registries.tree = RegUtils.createBlock(new Tree(),"tree");
     }
 
     @Mod.EventHandler
