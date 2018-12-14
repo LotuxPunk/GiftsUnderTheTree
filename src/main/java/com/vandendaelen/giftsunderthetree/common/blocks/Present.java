@@ -7,7 +7,12 @@ import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.PropertyEnum;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.ItemStack;
+import net.minecraft.util.NonNullList;
 import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class Present extends Block {
 
@@ -28,6 +33,16 @@ public class Present extends Block {
     }
 
     @Override
+    @SideOnly(Side.CLIENT)
+    public void getSubBlocks(CreativeTabs tab, NonNullList<ItemStack> list)
+    {
+        for (PresentType type : PresentType.VALUES)
+        {
+            list.add(new ItemStack(this, 1, type.ordinal()));
+        }
+    }
+
+    @Override
     public int getMetaFromState(IBlockState state) {
         return state.getValue(COLOR).ordinal();
     }
@@ -41,5 +56,17 @@ public class Present extends Block {
     public int damageDropped(IBlockState state)
     {
         return state.getValue(COLOR).ordinal();
+    }
+
+    @Override
+    public boolean isFullCube(IBlockState state)
+    {
+        return false;
+    }
+
+    @Override
+    public boolean isOpaqueCube(IBlockState state)
+    {
+        return false;
     }
 }
